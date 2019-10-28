@@ -25,7 +25,6 @@ public class HomeServlet extends HttpServlet {
         
         switch(request.getParameter("action")){
             case "someAction":
-                System.out.println("test");
                 getServletContext().getRequestDispatcher("/secondPage.jsp").forward(request, response);
                 break;
             default:
