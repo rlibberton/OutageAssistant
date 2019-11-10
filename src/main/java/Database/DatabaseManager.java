@@ -177,6 +177,19 @@ public class DatabaseManager {
         return output;
     }
 
-    
-    
+    public static Record getRecordById(int id) {
+        Session session = null;
+        Record out = null;
+        try {
+            session = getSessionFactory().openSession();
+            out = session.get(Record.class, id);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (session != null) {
+            session.close();
+        }
+        return out;
+    }
+
 }
