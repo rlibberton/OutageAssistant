@@ -2,3 +2,4 @@
 # Log file
 *.log
 nb-configuration.xml
+hibernate.cfg.xml
