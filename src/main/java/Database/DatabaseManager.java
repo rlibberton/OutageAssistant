@@ -61,7 +61,7 @@ public class DatabaseManager {
         List<County> output = new ArrayList<>();
         try {
             session = getSessionFactory().openSession();
-            output = session.createQuery("from counties").getResultList();
+            output = session.createQuery("from counties c").getResultList();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -167,7 +167,7 @@ public class DatabaseManager {
         List<Record> output = new ArrayList<>();
         try {
             session = getSessionFactory().openSession();
-            output = session.createQuery("from records").getResultList();
+            output = session.createQuery("from records r").getResultList();
         } catch (Exception e) {
             e.printStackTrace();
         }

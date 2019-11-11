@@ -2,3 +2,4 @@
 *.cfg.xml
 nb-configuration.xml
 hibernate.cfg.xml
+/target/
